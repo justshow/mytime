@@ -43,6 +43,7 @@ public class MainActivity extends FragmentActivity {
 
         //1.初始化试图
         findViews();
+        initPager();
 
 
     }
@@ -99,7 +100,7 @@ public class MainActivity extends FragmentActivity {
                     position = 3;
                     break;
                 case R.id.btn_main_mycenter:
-                    position = 3;
+                    position = 4;
                     break;
             }
             setFragment();
@@ -112,7 +113,6 @@ public class MainActivity extends FragmentActivity {
             @Nullable
             @Override
             public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-                Log.e("TAG", "创建了一个新的fragment");
                 BasePager basePager=getBasePager();
                 if(basePager!=null) {
 
