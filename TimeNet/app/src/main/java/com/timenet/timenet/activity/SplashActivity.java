@@ -21,20 +21,20 @@ public class SplashActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startMainActivity();
+                startGuideActivity();
             }
         }, 2000);
     }
 
-    private void startMainActivity() {
-        Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+    private void startGuideActivity() {
+        Intent intent = new Intent(SplashActivity.this,GuideActivity.class);
         startActivity(intent);
         finish();
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        startMainActivity();
+        startGuideActivity();
         return super.onTouchEvent(event);
     }
 

@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +20,7 @@ import com.timenet.timenet.pagers.HomePager;
 import com.timenet.timenet.pagers.MallPager;
 import com.timenet.timenet.pagers.MyCenterPager;
 import com.timenet.timenet.pagers.TicketPager;
+import com.timenet.timenet.utils.LogUtils;
 
 import java.util.ArrayList;
 
@@ -81,7 +81,7 @@ public class MainActivity extends FragmentActivity {
 
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
-            Log.e("TAG", "checkchange()");
+            LogUtils.Log("checkchange");
             //根据checkedid从list集合中取出不同的pager对象，添加到Fragment中
             switch (checkedId) {
                 default:

@@ -17,15 +17,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="#11000000"
-        android:padding="5dp"
+        android:padding="2dp"
         android:layout_gravity="center_vertical"
         >
         <RadioButton
+
             style="@style/BottomTheme"
             android:id="@+id/btn_main_home"
             android:drawableTop="@drawable/btn_selector_home"
-            android:text="首页"/>
+            android:text="首页"
+            />
         <RadioButton
+            android:layout_marginTop="2dp"
             style="@style/BottomTheme"
             android:id="@+id/btn_main_ticket"
             android:drawableTop="@drawable/btn_selector_ticket"
