@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#11000000"
+        android:padding="2dp"
+        android:layout_gravity="center_vertical"
+        >
+        <RadioButton
+
+            style="@style/BottomTheme"
+            android:id="@+id/btn_main_home"
+            android:drawableTop="@drawable/btn_selector_home"
+            android:text="首页"
+            />
+        <RadioButton
+            android:layout_marginTop="2dp"
+            style="@style/BottomTheme"
+            android:id="@+id/btn_main_ticket"
+            android:drawableTop="@drawable/btn_selector_ticket"
+            android:text="购票"/>
+        <RadioButton
+            style="@style/BottomTheme"
+            android:id="@+id/btn_main_mall"
+            android:drawableTop="@drawable/btn_selector_mall"
+            android:text="商城"/>
+        <RadioButton
+            style="@style/BottomTheme"
+            android:id="@+id/btn_main_finder"
+            android:drawableTop="@drawable/btn_selector_finder"
+            android:text="发现"
+            android:textColor="@drawable/rb_textcolor_selecor"/>
+        <RadioButton
+            style="@style/BottomTheme"
+            android:id="@+id/btn_main_mycenter"
+            android:drawableTop="@drawable/btn_selector_mycenter"
+            android:text="我的"
+            android:textColor="@drawable/rb_textcolor_selecor"/>
+    </RadioGroup>
+
+</LinearLayout>
