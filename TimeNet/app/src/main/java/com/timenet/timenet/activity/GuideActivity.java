@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.timenet.timenet.R;
 import com.timenet.timenet.utils.LogUtils;
+import com.timenet.timenet.utils.SpUtils;
 import com.timenet.timenet.utils.Utils;
 
 public class GuideActivity extends Activity {
@@ -42,6 +43,9 @@ public class GuideActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
+
+        SpUtils.saveData(this,SplashActivity.EVER_GUIDE,true);
+
         initView();
         viewPager.setAdapter(new MyAdapter());
         addPoint();
