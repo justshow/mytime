@@ -50,6 +50,7 @@ private ListView listview;
     public View initView() {
         view = View.inflate(mActivity, R.layout.buy_item, null);
         x.view().inject(view);
+        //
         return view;
     }
 
