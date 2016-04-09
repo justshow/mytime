@@ -7,6 +7,7 @@ import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.timenet.timenet.R;
+import com.timenet.timenet.adapter.ViewPagerAdapter;
 import com.timenet.timenet.basepager.BasePager;
 import com.timenet.timenet.domain.HomeMoviesBean;
 import com.timenet.timenet.url.Url;
@@ -22,6 +23,7 @@ import org.xutils.x;
 public class HomePager extends BasePager {
     private View homeView;
     private ListView listView;
+    ViewPagerAdapter vpAdapter;
     /**
      * 主页listview头布局
      */
@@ -95,6 +97,7 @@ public class HomePager extends BasePager {
     private void praseJson(String json) {
         Gson gson=new Gson();
         HomeMoviesBean homeMoviesBean = gson.fromJson(json, HomeMoviesBean.class);
-
+        vpAdapter = new ViewPagerAdapter(homeMoviesBean, mActivity);
+        headVp.setAdapter(vpAdapter);
     }
 }
