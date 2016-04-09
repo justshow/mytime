@@ -18,6 +18,7 @@ public class MallPager extends BasePager {
     public View initView() {
         TextView textView=new TextView(mActivity);
         textView.setText("这是商城页");
+
         return textView;
     }
 

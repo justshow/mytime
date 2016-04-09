@@ -5,6 +5,8 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.timenet.timenet.domain.HomeMoviesBean;
+
 import java.util.ArrayList;
 
 /**
@@ -13,8 +15,8 @@ import java.util.ArrayList;
 public class ViewPagerAdapter extends PagerAdapter {
     private ArrayList<Object> data;
     private Activity mActivity;
-    public ViewPagerAdapter(ArrayList<Object> data,Activity mActivity) {
-        this.data=data;
+    public ViewPagerAdapter(HomeMoviesBean bean,Activity mActivity) {
+
         this.mActivity=mActivity;
     }
 
