@@ -24,3 +24,14 @@
             targetSdkVersion 23
 6.版本控制采用git
   附：（git地址）https://github.com/finalwork/mytime.git
+
+7.主页的实现
+    1.头布局；viewpager轮播
+    2.item类型
+        ①正在售票
+           ...正在售票联，horzentalscrollview联合即将上映联
+        ②电影商城
+           ...顶部栏，内容栏
+        ③一组热搜榜（圆形图片）
+        ④viewpager（轮播）
+        ⑤时光精选

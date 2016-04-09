@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/home_type1_saleing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在售票 • "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_type1_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/home_type1_saleing"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/city_select_arrow"
+            android:text="东莞"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_home_type1_saleing_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/home_hotplay_right_arrow"
+            android:text="共35部"
+            android:textColor="#ff8844"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_home_type1_will_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="即将上映 • "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/home_type1_will_show_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_home_type1_will_show"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/home_hotplay_right_arrow"
+            android:text="48部"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:background="#abaaaa" />
+
+        <TextView
+            android:id="@+id/home_type1_samecity_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/home_hotplay_right_arrow"
+            android:text="83家"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_home_type1_samecity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/home_type1_samecity_count"
+            android:text="同城影院 • "
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

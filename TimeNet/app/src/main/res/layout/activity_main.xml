@@ -21,7 +21,6 @@
         android:layout_gravity="center_vertical"
         >
         <RadioButton
-
             style="@style/BottomTheme"
             android:id="@+id/btn_main_home"
             android:drawableTop="@drawable/btn_selector_home"
